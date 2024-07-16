@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "DistrictOne",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": false,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#d4ff00"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/favicon.ico",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://district0ne.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://district0ne.github.io/sitemap.xml\n",
+    "mbrsiteDomain": "lbaxeaq1f7",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "DistrictOne™ | Home Official Site",
+        "meta_descr": "DistrictOne - Social Meme Labs with Money Games. Social space for launching and growing a coin, leveraging the power of social hype and money games—safe, fun, in one click.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/districtone.png\" alt=\"DistrictOne\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uiFIXCfjcC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#d4ff00"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>DistrictOne: Redefining Community Living through Innovation and Sustainability</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the modern era, the concept of community living has taken on a whole new meaning. <a href=\"https://district0ne.github.io/\" class=\"text-primary\">DistrictOne</a>, a groundbreaking residential development, is revolutionizing the way we perceive and experience community living. This unique project, located in the heart of a vibrant city, combines innovation, sustainability, and luxury to create an unparalleled living environment. In this blog, we will explore DistrictOne, uncovering its exceptional features, sustainable design principles, and the transformative impact it has on the lives of its residents. From state-of-the-art amenities to a strong sense of community, DistrictOne exemplifies the future of urban living.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>1.The Vision of DistrictOne:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://districtone.io/\" class=\"text-primary\"><b>DistrictOne</b></a> is the brainchild of visionary developers who sought to create a community that goes beyond conventional residential developments. The vision behind DistrictOne is to establish a harmonious blend of nature, technology, and human interaction. It aims to provide a seamless integration of urban living with the tranquility of natural surroundings, offering residents a unique and sustainable lifestyle.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>2.Innovative Design and Architecture:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n                  a. Luxurious Residences:</b> DistrictOne offers a range of luxurious residential options, including villas, townhouses, and apartments. Each residence is meticulously designed to maximize comfort, functionality, and aesthetic appeal. From spacious interiors to breathtaking views, the residences in DistrictOne redefine modern living.<br><br><b>b. Crystal Lagoon:</b> One of the standout features of DistrictOne is its expansive Crystal Lagoon, spanning over several acres. This man-made marvel provides residents with an idyllic beachfront experience, complete with white sandy beaches, crystal-clear waters, and a variety of water activities. The lagoon serves as a focal point for recreation, relaxation, and community bonding.<br><br><b>c. Cutting-Edge Technology:</b> DistrictOne embraces the latest advancements in technology to enhance the living experience of its residents. Smart home automation systems, high-speed internet connectivity, and integrated security systems are seamlessly integrated into each residence, providing convenience, efficiency, and peace of mind.<br><br><b>d. Green Spaces and Parks:</b> DistrictOne is designed with a strong emphasis on green spaces and parks, ensuring a healthy and sustainable environment. The development features beautifully landscaped gardens, parks, and jogging tracks, providing residents with ample opportunities for outdoor activities and leisure.<br>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>3.Sustainability and Eco-Friendly Practices:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Energy Efficiency:</b> DistrictOne incorporates energy-efficient technologies and practices to reduce its environmental impact. From solar panels to energy-efficient lighting, the development aims to minimize energy consumption and promote sustainability.<br><br><b>b. Water Conservation:</b> The Crystal Lagoon in DistrictOne utilizes advanced water treatment systems, ensuring efficient water usage and conservation. Additionally, the development implements water-saving fixtures and promotes responsible water usage among residents.<br><br><b>c. Green Building Materials:</b> DistrictOne utilizes eco-friendly and sustainable building materials throughout its construction. From recycled materials to low VOC (Volatile Organic Compounds) paints, the development prioritizes the use of environmentally conscious materials, contributing to a healthier living environment.<br><br><b>d. Waste Management:</b> DistrictOne implements comprehensive waste management systems, including recycling facilities and waste segregation practices. These initiatives minimize waste generation and promote recycling and responsible waste disposal within the community.<br><br><b>e. Biodiversity Preservation:</b> The development of DistrictOne takes into account the preservation of existing natural habitats. Efforts are made to protect and enhance the local biodiversity through the creation of green corridors, planting native trees, and promoting ecological balance within the community.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>4.Community Engagement and Amenities:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Community Center: </b>DistrictOne features a state-of-the-art community center that serves as a hub for socializing, recreation, and community events. The center offers a range of amenities, including sports facilities, fitness centers, swimming pools, and multipurpose halls, fostering a strong sense of community and camaraderie.<br><br><b>b. Retail and Dining:</b> DistrictOne incorporates retail outlets and dining establishments within its premises, providing residents with convenient access to a variety of shopping and dining options. This integrated approach enhances the overall living experience and promotes a vibrant community atmosphere.<br><br><b>c. Educational Institutions:</b> DistrictOne recognizes the importance of education and includes educational institutions within its boundaries. This ensures that residents have access to quality educational facilities, fostering a holistic and self-contained living environment.<br><br><b>d. Healthcare Facilities:</b> The development incorporates healthcare facilities, including clinics and medical centers, to cater to the healthcare needs of its residents. This convenience ensures that healthcare services are easily accessible within the community.<br><br><b>e. Recreational Spaces:</b> DistrictOne offers a range of recreational spaces, including parks, playgrounds, and sports facilities, encouraging an active and healthy lifestyle. These spaces provide residents with opportunities for outdoor activities, sports, and leisure.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">DistrictOne represents a paradigm shift in community living, combining innovation, sustainability, and luxury to create an extraordinary residential development. With its visionary design, advanced technology, and commitment to sustainability, DistrictOne sets a new standard for urban living. By fostering a strong sense of community, promoting eco-friendly practices, and offering an array ofamenities, DistrictOne elevates the living experience and enhances the well-being of its residents. This unique project serves as a testament to the possibilities of creating sustainable and thriving communities within the urban landscape.<br><br>DistrictOne's innovative design, including luxurious residences, the breathtaking Crystal Lagoon, and cutting-edge technology, provides residents with a truly exceptional living environment. The emphasis on sustainability through energy efficiency, water conservation, green building materials, waste management, and biodiversity preservation demonstrates a commitment to environmental responsibility.<br><br>Moreover, DistrictOne fosters community engagement through its community center, retail and dining options, educational institutions, healthcare facilities, and recreational spaces. These amenities promote social interaction, convenience, and a vibrant community atmosphere.<br><br>In conclusion, DistrictOne redefines community living by seamlessly integrating innovation, sustainability, and luxury. With its visionary approach and commitment to creating a harmonious living environment, DistrictOne paves the way for a future where community living transcends conventional boundaries and enriches the lives of its residents.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uiFIXPooO6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
